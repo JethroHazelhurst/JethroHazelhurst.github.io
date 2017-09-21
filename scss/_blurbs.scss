@@ -49,3 +49,19 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    #blurb-box-1 {
+        margin-top: 0;
+        img {
+            display: none;
+        }
+        a {
+            position: inherit;
+            display: block;
+            margin-top: -20px;
+            text-align: center;
+            transform: rotateZ(0deg);
+        }
+    }
+}

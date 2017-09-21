@@ -162,6 +162,17 @@ section {
     bottom: -100px; }
     #blurb-box-1:after {
       left: 50%; } }
+@media (max-width: 480px) {
+  #blurb-box-1 {
+    margin-top: 0; }
+    #blurb-box-1 img {
+      display: none; }
+    #blurb-box-1 a {
+      position: inherit;
+      display: block;
+      margin-top: -20px;
+      text-align: center;
+      transform: rotateZ(0deg); } }
 .browser {
   display: block;
   margin: 0 auto;
@@ -544,6 +555,9 @@ nav {
   width: 40vh;
   border-radius: 90vh; }
 
+@media (max-width: 480px) {
+  .shape {
+    display: none; } }
 h1 {
   font-size: 64px; }
 
@@ -593,7 +607,6 @@ p {
         font-family: "Consolas", monaco, monospace; }
 
 .slider-arrow {
-  padding: 50px;
   font-size: 64px;
   color: #E8F4F7;
   display: flex;

@@ -56,3 +56,9 @@
     width: 40vh;
     border-radius: 90vh;
 }
+
+@media (max-width: 480px) {
+    .shape {
+        display: none;
+    }
+}
