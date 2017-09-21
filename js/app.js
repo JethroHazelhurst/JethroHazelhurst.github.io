@@ -1,3 +1,9 @@
+/**
+ * Hi! Thanks for looking at my code :)
+ * Please note: this JavaScript has been left unprocessed so that you can look at it easily!
+ * I hope you like what you see and if you have any feedback please let me know!
+ */
+
 (function(){
 
     var model = {
@@ -15,20 +21,17 @@
         },
 
         cacheDOM: function(){
-            // skill slider
             this.$skill      = document.getElementsByClassName('skill');
             this.$skillArrow = $('.slider-arrow');
-            // mobile navigation
             this.$navOverlay = $('.nav-overlay');
             this.$toggleNav  = $('.toggle-nav');
-            // soft scroll
         },
 
         bindEvents: function(){
             this.$skillArrow.on('click', this.skillSlider.bind(this));
             this.$toggleNav.on('click', this.toggleNav.bind(this));
             $(window).scroll(this.toggleScroll);
-            $('a[href*="#"]').not().not().click(this.smoothScroll);
+            $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(this.smoothScroll);
         },
 
         toggleScroll: function(){
@@ -41,7 +44,6 @@
             var scrollBarLocation = $(this).scrollTop();
             $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').each(function(){
                 var sectionOffset = $(this.hash).offset().top;
-                // console.log(scrollBarLocation, Math.floor(sectionOffset));
                 if (Math.floor(sectionOffset) <= scrollBarLocation) {
                     $(this).addClass('active');
                     $(this).siblings().removeClass('active');
@@ -51,12 +53,12 @@
             });
         },
 
-        showSkill: function(foo){
+        showSkill: function(j){
             var length = this.$skill.length;
             for (var i = 0; i < length; i++) {
                 $(this.$skill[i]).hide();
             }
-            $(this.$skill[foo]).show();
+            $(this.$skill[j]).show();
         },
 
         skillSlider: function(e){
@@ -88,4 +90,5 @@
     }
 
     app.init()
+    
 })();
