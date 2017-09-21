@@ -1,0 +1,46 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+$primary-font:   'Comfortaa', cursive;
+$secondary-font: 'Consolas', monaco, monospace;
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 42px;
+    span {
+        font-size: 64px;
+    }
+}
+
+h4 {
+    font-family: Consolas,monaco,monospace;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Consolas,monaco,monospace;
+}
+
+// align
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// colors
+.text-white {
+    color: $color-light;
+}
+
+.text-brand {
+    color: $color-main;
+}
