@@ -28,7 +28,7 @@
 }
 
 .slider-arrow {
-    // padding: 50px;
+    padding: 10px;
     font-size: 64px;
     color: $color-main-light;
     display: flex;
@@ -40,20 +40,6 @@
     user-select: none;
     &:hover {
         cursor: pointer;
-        color: $color-light;
-    }
-}
-
-.slider-arrow-left {
-    text-align: center;
-    &:hover {
-        background: lighten($color-main-dark, 10%);
-    }
-}
-
-.slider-arrow-right {
-    text-align: center;
-    &:hover {
-        background: lighten($color-main-dark, 10%);
+        color: $color-main;
     }
 }

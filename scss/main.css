@@ -38,6 +38,21 @@ p {
 .text-brand {
   color: #00C1F7; }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px; }
+
+  h2 {
+    font-size: 32px; }
+    h2 span {
+      font-size: 42px; }
+
+  h4 {
+    font-family: Consolas,monaco,monospace;
+    font-size: 26px; }
+
+  p {
+    font-size: 16px; } }
 section {
   position: relative; }
 
@@ -301,6 +316,21 @@ p {
 .text-brand {
   color: #00C1F7; }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px; }
+
+  h2 {
+    font-size: 32px; }
+    h2 span {
+      font-size: 42px; }
+
+  h4 {
+    font-family: Consolas,monaco,monospace;
+    font-size: 26px; }
+
+  p {
+    font-size: 16px; } }
 .contact {
   max-width: 600px;
   margin: 0 auto;
@@ -586,6 +616,21 @@ p {
 .text-brand {
   color: #00C1F7; }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px; }
+
+  h2 {
+    font-size: 32px; }
+    h2 span {
+      font-size: 42px; }
+
+  h4 {
+    font-family: Consolas,monaco,monospace;
+    font-size: 26px; }
+
+  p {
+    font-size: 16px; } }
 .skills {
   display: flex;
   min-height: 600px; }
@@ -607,6 +652,7 @@ p {
         font-family: "Consolas", monaco, monospace; }
 
 .slider-arrow {
+  padding: 10px;
   font-size: 64px;
   color: #E8F4F7;
   display: flex;
@@ -618,17 +664,7 @@ p {
   user-select: none; }
   .slider-arrow:hover {
     cursor: pointer;
-    color: white; }
-
-.slider-arrow-left {
-  text-align: center; }
-  .slider-arrow-left:hover {
-    background: #005a75; }
-
-.slider-arrow-right {
-  text-align: center; }
-  .slider-arrow-right:hover {
-    background: #005a75; }
+    color: #00C1F7; }
 
 .tablet {
   position: relative;
@@ -705,6 +741,21 @@ p {
 .text-brand {
   color: #00C1F7; }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px; }
+
+  h2 {
+    font-size: 32px; }
+    h2 span {
+      font-size: 42px; }
+
+  h4 {
+    font-family: Consolas,monaco,monospace;
+    font-size: 26px; }
+
+  p {
+    font-size: 16px; } }
 .padding-v-md {
   padding: 60px 15px; }
 
